@@ -1,0 +1,216 @@
+<!doctype html>
+<html xmlns: th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar bg-gradient-to-r from-purple-300 to-pink-300">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">Queen/King Selections</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="leaderboard.html">Latest Results</a></li>
+          <li>
+            <details>
+              <summary>
+                View Selections
+              </summary>
+              <ul class="p-2 bg-base-100">
+                <li><a href="preview.html">Queen Selections</a></li>
+                <li><a>King Selections</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- main grid -->
+    <div class="grid grid-rows-4 grid-cols-9 gap-4 mt-3">
+        <div class="bg-gradient-to-r from-purple-300 to-pink-300 col-start-3 col-span-5">
+          <div class="w-full carousel rounded-box mt-3">
+            <!-- selection 1 -->
+            <div class="carousel-item" id="item1">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp1.jpg" class="">
+                <div class="flex items-center justify-between mx-4 mt-3">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 1</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 2 -->
+            <div class="carousel-item" id="item2">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp2.jpg" class=""/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 2</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 3 -->
+            <div class="carousel-item" id="item3">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp3.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 3</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 4 -->
+            <div class="carousel-item" id="item4">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp4.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 4</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 5 -->
+            <div class="carousel-item" id="item5">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp8.webp"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 5</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 6 -->
+            <div class="carousel-item" id="item6">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp7.webp"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 6</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 7 -->
+            <div class="carousel-item" id="item7">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp1.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 7</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 8 -->
+            <div class="carousel-item" id="item8">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp9.webp"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 8</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 9 -->
+            <div class="carousel-item" id="item9">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp10.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 9</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 10 -->
+            <div class="carousel-item" id="item10">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp11.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 10</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 11 -->
+            <div class="carousel-item" id="item11">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp11.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 11</div>
+                </div>
+              </div>
+            </div>
+            <!-- selection 12 -->
+            <div class="carousel-item" id="item12">
+              <div class="bg-white border rounded-sm max-w-md">
+                <img src="images/tsp11.jpg"/>
+                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
+                  <div class="font-semibold text-xl mx-4 mt-2 mb-4">Thae Su Paing</div>
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4">2890384 votes</div>
+                </div>
+                <div class="flex items-center justify-end mx-4">
+                  <div class="font-semibold text-base mx-4 mt-2 mb-4 ">Number 12</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- links for carousel to see the selections -->
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a>
+            <a href="#item2" class="btn btn-xs">2</a>
+            <a href="#item3" class="btn btn-xs">3</a>
+            <a href="#item4" class="btn btn-xs">4</a>
+            <a href="#item5" class="btn btn-xs">5</a>
+            <a href="#item6" class="btn btn-xs">6</a>
+            <a href="#item7" class="btn btn-xs">7</a>
+            <a href="#item8" class="btn btn-xs">8</a>
+            <a href="#item9" class="btn btn-xs">9</a>
+            <a href="#item10" class="btn btn-xs">10</a>
+            <a href="#item11" class="btn btn-xs">11</a>
+            <a href="#item12" class="btn btn-xs">12</a>
+          </div>
+
+        </div>
+    </div>
+<!-- component -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html xmlns: th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  <link href="output.css" rel="stylesheet">-->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar bg-gradient-to-r from-purple-300 to-pink-300">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">Queen/King Selections</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="leaderboard.html">Latest Results</a></li>
+          <li>
+            <details>
+              <summary>
+                View Selections
+              </summary>
+              <ul class="p-2 bg-base-100">
+                <li><a href="preview.html">Queen Selections</a></li>
+                <li><a>King Selections</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- drawer -->
+    
+    <!-- main grid -->
+    <div class="grid grid-rows-4 grid-cols-9 gap-4 mt-3">
+      <div class="bg-gradient-to-r from-purple-300 to-pink-300 col-start-3 col-span-5">
+        <!-- queen card -->
+        <div class="card card-compact  bg-base-100 shadow-xl m-4 p-4">
+          <div class="text-4xl text-center mb-3"><i class="fa-solid fa-crown"></i>Top Voted Selections<i class="fa-solid fa-crown"></i></div>
+          <hr>
+          <div class="card-body">
+            <h2 class="card-title">Latest Results</h2>
+
+            <!-- flex for top three selections -->
+            <div class="flex  justify-center">
+              <!-- second ranked selection -->
+              <div class="flex-auto w-32 text-center self-center">
+                <!-- top selected avator -->
+                <div class="avatar">
+                  <div class="w-32 rounded-full ring ring-teal-500 ring-offset-base-100 ring-offset-2">
+                    <img src="images/tsp1.jpg" />
+                  </div>
+                </div><br>
+                Thae Su Paing
+              </div>
+              <div class="flex-auto w-32 text-center self-center">
+                <!-- top selected avator -->
+                <div class="avatar">
+                  <div class="w-44 rounded-full ring ring-amber-400 ring-offset-base-100 ring-offset-2">
+                    <img src="images/tsp1.jpg" />
+                  </div>
+                </div><br>
+                Thae Su Paing
+              </div>
+              <!-- third ranked selection -->
+              <div class="flex-auto w-32 text-center self-center">
+                <!-- top selected avator -->
+                <div class="avatar">
+                  <div class="w-32 rounded-full ring ring-pink-400 ring-offset-base-100 ring-offset-2">
+                    <img src="images/tsp1.jpg" />
+                  </div>
+                </div><br>
+                Thae Su Paing
+              </div>
+            </div>
+
+            <!-- grid for ranking -->
+            <!-- parent div for grid for ranking -->
+            <div class=" h-96 overflow-auto">
+              <div class="grid grid-cols-7 grid-rows-5">
+                <!-- Use loop here for selections list and ranks -->
+
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">1</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+
+                <!-- delete these later start -->
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">2</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">3</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">4</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">5</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">6</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">7</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">8</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">9</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+
+                <!-- column 1 of grid -->
+                <div class="col-span-1 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">10</div>
+                </div>
+
+                <!-- column 2 of grid -->
+                <div class="h-24 col-span-4">
+                  <!-- flex for avator and name -->
+                  <div class="flex flex-row justify-start">
+                    <!-- flex item 1 -->
+                    <div class="basis-1/4">
+                      <div class="avatar">
+                        <div class="w-16 rounded-full">
+                          <img src="images/tsp1.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- flex item 2 -->
+                    <div class="text-xl font-serif  self-center">Thae Su Paing</div>
+                  </div>
+                  
+                </div>
+
+                <!-- column 3 of grid -->
+                <div class="col-span-2 mb-6 flex justify-center items-center">
+                  <div class="text-3xl font-serif">122</div>
+                </div>
+                <!-- delete these later end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+</body>
+</html>
